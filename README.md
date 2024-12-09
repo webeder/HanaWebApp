@@ -1,5 +1,9 @@
 # SAP HANA Client com ODBC em .NET Core - PROJETO DE EXEMPLO TROQUE PELA SUAS CREDENCIAIS 
 
+### Informações ou ajuda, entre em contato comigo:
+- Email: webedersistemas@gmail.com
+- GitHub: webeder 
+
 Este projeto demonstra como configurar e usar o **SAP HANA Client** instalado no diretório **C:\Program Files\SAP\hdbclient** em uma aplicação .NET Core. O objetivo é conectar a um banco de dados SAP HANA usando o driver ODBC, permitindo que você execute comandos SQL e consulte dados.
 
 ## Pré-requisitos
@@ -32,6 +36,8 @@ O cliente SAP HANA inclui o driver **HDBODBC** que será utilizado para a conex�
   - **Server**: Endereço do servidor SAP HANA.
   - **Porta**: Porta do servidor.
   - **Usuário** e **Senha**: As credenciais de acesso ao SAP HANA.
+ 
+Caso precise de mais ajuda para configurar ou depurar, fique à vontade para entrar em contato!
 
 ### 3. Crie uma aplicação .NET Core
 
@@ -40,7 +46,7 @@ Crie uma nova aplicação console no .NET Core para usar a conexão ODBC:
 ```bash
 dotnet new console -n HanaConnectionApp
 cd HanaConnectionApp
-dotnet add package System.Data.Odbc
+dotnet add package System.Data.Odbc ´´´´
 
 
 using System;
@@ -102,13 +108,7 @@ Permissões de Conexão: Certifique-se de que o usuário configurado tenha permi
 Alternativa: Usando o SAP HANA ADO.NET Driver
 Se preferir, você pode usar o SAP HANA ADO.NET Driver para conectar diretamente ao banco de dados sem passar pelo ODBC. No entanto, isso requer o pacote adequado para o .NET Core, que pode ser mais difícil de configurar dependendo da versão do SAP HANA Client.
 
-Caso precise de mais ajuda para configurar ou depurar, fique à vontade para entrar em contato!
-
 
 
  
-### Contato
-Para mais informações ou ajuda, entre em contato comigo:
 
-Email: contato+webedersistemas@gmail.com
-GitHub: webeder
